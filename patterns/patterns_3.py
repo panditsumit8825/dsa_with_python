@@ -19,7 +19,11 @@
 #         print()
 # patterns6(6)
 
-def patterns7(n):
-    for i in range(n):
-        for j in range(i):
-            print()
+# def patterns7(n):
+#     for i in range(n):
+#         print(" ",(n-i-1))
+#         for j in range(i):
+#             print("*")
+# patterns7(6)
+
+            
