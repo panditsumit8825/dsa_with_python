@@ -28,6 +28,6 @@
 #                 print(" ",n-i-1)
 # patterns7(5)
 
-n=4
+n=6
 for i in range(n+1):
     print(" "*(n-i)+"*"*(2*i+1)+" "*(n-i))
