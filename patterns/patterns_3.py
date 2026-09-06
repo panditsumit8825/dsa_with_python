@@ -25,8 +25,12 @@
 # pattern(4)
 
 def pattern(n):
-    for i in range(n,0,-1):
-        print(" "*(n-i)+"*"*(i-1)+" "*(n-i))
-        # print()
-
-pattern(9)
+    for i in range(n):
+        print(" "*i,end="")
+        print("*"*(9-2*i))
+        # print(" "*(i))
+        # for j in range(n,0,-1):
+        #     print("*"*(2*n-1))
+        #     for k in range(i):
+        #         print(" "*k)
+pattern(5)
