@@ -51,3 +51,8 @@
 #             print(p,end="")
 #         print()
 # pattern12(5)
+
+def pattern13(n):
+    for i in range(n):
+        print(i)
+pattern13(5)
