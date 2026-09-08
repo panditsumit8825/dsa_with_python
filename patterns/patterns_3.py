@@ -41,6 +41,13 @@
 #     dooo
 # def patterns11(n)
 #     dooo
-
-def pttern12(n):
-    
+# def pattern12(n):
+#     for i in range(1,n+1):
+#         for j in range(1,i):
+#             print(j,end="")
+#         for k in range(2*(n-i)):
+#             print(" ",end="")
+#         for p in range(i-1,0,-1):
+#             print(p,end="")
+#         print()
+# pattern12(5)
