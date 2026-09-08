@@ -19,13 +19,20 @@
 #         print()
 # patterns6(6)
 
-# def pattern(n):
+# def pattern7(n):
 #     for i in range(n+1):
 #         print(" "*(n-i)+"*"*(2*i+1)+" "*(n-i))
-# pattern(4)
+# pattern7(4)
 
-def pattern(n):
+# def pattern8(n):
+#     for i in range(n):
+#         print(" "*i,end="")
+#         print("*"*(9-2*i))
+# pattern8(5)
+
+def pattern9(n):
     for i in range(n):
-        print(" "*i,end="")
-        print("*"*(9-2*i))
-pattern(5)
+        print(" "*(n-(i+1))+"*"*(2*i+1))
+    for j in range(n):
+        print(" "*j+"*"*(n-2*j+2)+" "*j)
+pattern9(3)
