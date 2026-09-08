@@ -110,4 +110,33 @@
 #         print()
 # pattern19(5)
 
+# def pattern20(n):
+#     for i in range(1,n+1):
+#         print("*"*i+" "*(2*n-2*i)+"*"*i)
+#     # lower half reverse of upper logic
+#     for j in range(n,0,-1):
+#             print("*"*j+" "*(2*n-2*j)+"*"*j)
+#     print()
+        
+# pattern20(5)
+
+# def pattern21(n):
+#     for i in range(n):
+#         for j in range(n):
+#             if(i==0 or i==n-1 or j==0 or j==n-1):
+#                 print("*",end="")
+#             else:
+#                 print(" ",end="")
+#         print()
+# pattern21(5)
+
+def pattern22(n):
+    size=2*n-1
+    for i in range(size):
+        for j in range(size):
+            val=n-min(i,j,size-i-1,size-j-1)
+            print(val,end=" ")
+        print()
+pattern22(4)
+
 
