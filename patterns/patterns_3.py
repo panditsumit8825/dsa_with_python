@@ -30,9 +30,17 @@
 #         print("*"*(9-2*i))
 # pattern8(5)
 
-def pattern9(n):
-    for i in range(n):
-        print(" "*(n-(i+1))+"*"*(2*i+1))
-    for j in range(n):
-        print(" "*j+"*"*(n-2*j+2)+" "*j)
-pattern9(3)
+# def pattern9(n):
+#     for i in range(n):
+#         print(" "*(n-(i+1))+"*"*(2*i+1))
+#     for j in range(n):
+#         print(" "*j+"*"*(n-2*j+2)+" "*j)
+# pattern9(3)
+
+# def patterns10(n):
+#     dooo
+# def patterns11(n)
+#     dooo
+
+def pttern12(n):
+    
