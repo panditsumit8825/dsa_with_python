@@ -11,3 +11,4 @@ def armstrong(n):
         return "The number is Not a Armstrong number"
 num=int(input("Enter a number:"))
 print(armstrong(num))
+
