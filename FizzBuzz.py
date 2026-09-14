@@ -11,5 +11,5 @@ for i in range(1,n+1):
     elif(i%5==0):
         ans.append(str3)
     else:
-        ans.append(i)
+        ans.append(str(i))
 print(ans)
