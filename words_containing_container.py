@@ -1,8 +1,11 @@
 list=["leet","code"]
 x="e"
-for i in list:
-    if(i==x):
-        print([i])
+arr=[]
+for i,item in enumerate(list):
+    if x in item:
+        arr.append(i)
+print(arr)
+
 
 
 
