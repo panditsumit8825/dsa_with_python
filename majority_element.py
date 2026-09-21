@@ -1,4 +1,4 @@
-list=[2,2,9,7,4,3]
+list=[2,9,7,4,3]
 n=len(list)
 count=0
 for i in range(n):
