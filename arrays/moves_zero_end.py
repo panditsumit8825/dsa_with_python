@@ -31,11 +31,24 @@
 arr=[1,0,2,3,2,0,0,4,5,1]
 n=len(arr)
 j=-1
+# find a first zero in array than break and exit the loop
 for i in range(n):
     if(arr[i]==0):
         j=i
         break
+# then using two pinter concept and swap a zero to non-zero element
 for i in range(j+1,n):
+    if(arr[i]!=0):
+        arr[j],arr[i]=arr[i],arr[j]
+        j +=1
+print(arr)
+
+# another leetcode approach
+
+arr=[1,0,2,3,2,0,0,4,5,1]
+n=len(arr)
+j=0
+for i in range(n):
     if(arr[i]!=0):
         arr[j],arr[i]=arr[i],arr[j]
         j +=1
