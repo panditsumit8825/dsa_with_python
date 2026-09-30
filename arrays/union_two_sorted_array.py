@@ -55,5 +55,5 @@ while j < n2:
     if len(union_array) == 0 or union_array[-1] != arr2[j]:
         union_array.append(arr2[j])
     j += 1
-    
+
 print(union_array)
