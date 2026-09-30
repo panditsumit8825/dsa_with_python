@@ -28,63 +28,34 @@
 
 # # ---------------M-3----------------
 # # Optimal approach by using two pointer concept
-# arr1 = [1, 1, 2, 3, 4, 5]
-# arr2 = [2, 3, 4, 4, 5]
+arr1 = [1, 1, 2, 3, 4, 5]
+arr2 = [2, 3, 4, 4, 5]
 
-# n1 = len(arr1)
-# n2 = len(arr2)
+n1 = len(arr1)
+n2 = len(arr2)
 
-# i = 0
-# j = 0
-# union_array = []
+i = 0
+j = 0
+union_array = []
 
-# while i < n1 and j < n2:
-#     if arr1[i] <= arr2[j]:
-#         if len(union_array) == 0 or union_array[-1] != arr1[i]:
-#             union_array.append(arr1[i])
-#         i += 1
-#     else:
-#         if len(union_array) == 0 or union_array[-1] != arr2[j]:
-#             union_array.append(arr2[j])
-#         j += 1
-# while i < n1:
-#     if len(union_array) == 0 or union_array[-1] != arr1[i]:
-#         union_array.append(arr1[i])
-#     i += 1
-# while j < n2:
-#     if len(union_array) == 0 or union_array[-1] != arr2[j]:
-#         union_array.append(arr2[j])
-#     j += 1
+while i < n1 and j < n2:
+    if arr1[i] <= arr2[j]:
+        if len(union_array) == 0 or union_array[-1] != arr1[i]:
+            union_array.append(arr1[i])
+        i += 1
+    else:
+        if len(union_array) == 0 or union_array[-1] != arr2[j]:
+            union_array.append(arr2[j])
+        j += 1
+while i < n1:
+    if len(union_array) == 0 or union_array[-1] != arr1[i]:
+        union_array.append(arr1[i])
+    i += 1
+while j < n2:
+    if len(union_array) == 0 or union_array[-1] != arr2[j]:
+        union_array.append(arr2[j])
+    j += 1
 
-# print("the sorted array :" , union_array)
+print("the sorted array :" , union_array)
 
 
-# Optimized Python program for implementation of Bubble Sort
-def bubbleSort(arr):
-    n = len(arr)
-    
-    # Traverse through all array elements
-    for i in range(n):
-        swapped = False
-
-        # Last i elements are already in place
-        for j in range(0, n-i-1):
-
-            # Traverse the array from 0 to n-i-1
-            # Swap if the element found is greater
-            # than the next element
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-                swapped = True
-        if (swapped == False):
-            break
-
-# Driver code to test above
-if __name__ == "__main__":
-    arr = [64, 34, 25, 12, 22, 11, 90]
-
-    bubbleSort(arr)
-
-    print("Sorted array:")
-    for i in range(len(arr)):
-        print("%d" % arr[i], end=" ")
