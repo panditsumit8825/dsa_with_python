@@ -28,7 +28,7 @@
 
 # # ---------------M-3----------------
 # # Optimal approach by using two pointer concept
-arr1 = [1, 1, 2, 3, 4, 5]
+arr1 = [1, 1, 2, 3, 4, 5, 6, 7, 9]
 arr2 = [2, 3, 4, 4, 5]
 
 n1 = len(arr1)
