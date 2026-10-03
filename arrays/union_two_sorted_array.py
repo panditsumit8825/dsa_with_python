@@ -56,6 +56,6 @@ while j < n2:
         union_array.append(arr2[j])
     j += 1
 
-print("the sorted array :" , union_array)
+print(union_array)
 
 
