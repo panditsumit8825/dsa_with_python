@@ -1,6 +1,6 @@
 list=[1,2,4,5]
 n=5
-# flag=0
+flag=0
 for i in range(1,n):
     for j in range(1,n-1):
         if list[j]==i:
