@@ -1,26 +1,29 @@
-# list=[1,2,4,5]
-# n=5
-# flag=0
-# for i in range(1,n):
-#     for j in range(1,n-1):
-#         if list[j]==i:
-#             flag=1
-#             break
-#     if(flag==0):
-#         print(i)
+# Brute Force Approach To Find Missing Number
+
+# def missing_num(arr,n):
+#     for i in range(1,n+1):
+#         flag=0
+#         for j in arr:
+#             if(j==i):
+#                 flag=1
+#                 break
+#         if(flag==0):
+#             return i
+    
+# arr_list = [1,2,3,4,5,7]
+# n=len(arr_list)
+# print(missing_num(arr_list,n))
 
 
-def missing_num(list,n):
-    flag=0
-    for i in range(1,n):
-        for j in range(1,n-1):
-            if(list[j]==i):
-                flag=1
-                break
-    if(flag==0):
-        return i
+# Better Solution By Using Hashing
+# def missing_num(nums,n):
+#     my_hash=set(nums)
+#     for i in range(1,n+1):
+#         if i not in my_hash:
+#                     return i
 
-list=[1,2,4,5,8,3]
-n=5
-flag=0
-print(missing_num(list,n))
+# nums_list=[1,2,3,5]
+# n=len(nums_list)
+# print(missing_num(nums_list,n))
+
+# 
