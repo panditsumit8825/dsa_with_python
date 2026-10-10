@@ -27,14 +27,31 @@
 # print(missing_num(nums_list,n))
 
 # Optimal solution
-def missing_num(sum,arr):
-    sum1=0
-    for i in arr:
-        sum1 += i
-    return(sum-sum1)
+# def missing_num(sum,arr):
+#     sum1=0
+#     for i in arr:
+#         sum1 += i
+#     return(sum-sum1)
 
-arr_list=[1,2,4,5]
-l=len(arr_list)
-n=l+1
-sum=n*(n+1)//2
-print(missing_num(sum,arr_list))
+# arr_list=[1,2,4,5]
+# l=len(arr_list)
+# n=l+1
+# sum=n*(n+1)//2
+# print(missing_num(sum,arr_list))
+
+# Most Optimal Solution By Using XOR operation
+
+def missing_num(arr,n):
+    xor1=0
+    xor2=0
+    for i in range(1,n+1):
+        xor1=xor1^i
+        if(i-1)<len(arr):
+            xor2=xor2^arr[i-1]
+    return xor1^xor2
+
+arr_list=[1,2,3,5]
+n=len(arr_list) + 1
+# n=m+1
+print(missing_num(arr_list,n))
+
