@@ -26,4 +26,15 @@
 # n=len(nums_list)
 # print(missing_num(nums_list,n))
 
-# 
+# Optimal solution
+def missing_num(sum,arr):
+    sum1=0
+    for i in arr:
+        sum1 += i
+    return(sum-sum1)
+
+arr_list=[1,2,4,5]
+l=len(arr_list)
+n=l+1
+sum=n*(n+1)//2
+print(missing_num(sum,arr_list))
