@@ -41,17 +41,31 @@
 
 # Most Optimal Solution By Using XOR operation
 
-def missing_num(arr,n):
-    xor1=0
-    xor2=0
-    for i in range(1,n+1):
-        xor1=xor1^i
-        if(i-1)<len(arr):
-            xor2=xor2^arr[i-1]
-    return xor1^xor2
+# def missing_num(arr,n):
+#     xor1=0
+#     xor2=0
+#     for i in range(1,n+1):
+#         xor1=xor1^i
+#         if(i-1)<len(arr):
+#             xor2=xor2^arr[i-1]
+#     return xor1^xor2
 
-arr_list=[1,2,3,5]
-n=len(arr_list) + 1
-# n=m+1
-print(missing_num(arr_list,n))
+# arr_list=[1,2,3,5]
+# n=len(arr_list) + 1
+# # n=m+1
+# print(missing_num(arr_list,n))
 
+
+# Linear Search practice
+def lin_ser(nums,k):
+    n=len(nums)
+    for i in range(n):
+        
+
+
+
+
+nums=[1,2,4,5,6,7,3]
+# n=len(nums)
+k=6
+print(lin_ser(nums,k))
