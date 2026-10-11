@@ -57,15 +57,29 @@
 
 
 # Linear Search practice
-def lin_ser(nums,k):
-    n=len(nums)
-    for i in range(n):
-        
+# def lin_ser(nums,k):
+#     n=len(nums)
+#     i=0
+#     while(i<=n):
+#         if(nums[i]==k):
+#             i +=1
+#             return nums[i]
+#         else:
+#             return False
+
+# nums=[1,2,4,5,6,7,3]
+# # n=len(nums)
+# k=6
+# print(lin_ser(nums,k))
 
 
-
-
-nums=[1,2,4,5,6,7,3]
-# n=len(nums)
-k=6
-print(lin_ser(nums,k))
+nums=[1,2,4,7,3,9]
+n=len(nums)
+k=9
+for i in range(n):
+    if(nums[i]==k):
+        print(f"element exist on index : {i}")
+        break
+    else:
+        print(False)
+    # print(False)
