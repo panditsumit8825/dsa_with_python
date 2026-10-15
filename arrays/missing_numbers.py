@@ -85,19 +85,18 @@
     # print(False)
 
 # pattern practice
-# n=int(input("Enter the value of n:"))
-n=3
-for i in range(n+1):
-    # print(" "*(i-1))
-    for j in range(i):
-        print(" "*(i-1)+"*"*(2*j+1))
-# for j in range(n,0,-1):
-#     print("*"*(2*j-1))
-# for i in range(n):
-#     print(" "*i)
 #   *  
 #  *** 
 # *****
 # *****
 #  ***
 #   * 
+
+# n=int(input("Enter the value of n:"))
+n=5
+for i in range(n+1):
+    print(" "*(n-i) + "*"*i + " "*(n-i))
+for i in range(n,0,-1):
+    print(" "*(n-i) + "*"*(i+1-1) + " "*(n-i))
+    # print(" "*(n-2*i) +"*"*i)
+    # print()
