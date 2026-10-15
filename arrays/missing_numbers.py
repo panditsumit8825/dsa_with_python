@@ -95,8 +95,8 @@
 # n=int(input("Enter the value of n:"))
 n=5
 for i in range(n+1):
-    print(" "*(n-i) + "*"*i + " "*(n-i))
+    print(" "*(n-i) + "*"*i + " "*(n-i) + "*"*i)
 for i in range(n,0,-1):
-    print(" "*(n-i) + "*"*(i+1-1) + " "*(n-i))
+    print(" "*(n-i) + "*"*(i+1-1) + " "*(n-i) + "*"*(i+1-1))
     # print(" "*(n-2*i) +"*"*i)
     # print()
