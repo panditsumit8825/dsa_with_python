@@ -91,17 +91,38 @@
 # *****
 #  ***
 #   * 
-
-# n=int(input("Enter the value of n:"))
-# n=5
+# n=3
 # for i in range(n):
-#     print(" "*(n-(i+1)) + "*"*i + " "*(n-(i+1)))
-# for i in range(n,0,-1):
-#     print(" "*(n-(i+1)) + "*"*(i+1-1) + " "*(n-(i+1)))
-    # print(" "*(n-2*i) +"*"*i)
-    # print()
-n=3
-for i in range(n):
-    print(" "*(n-(i+1)) + "*"*(2*i+1))
-for j in range(n,0,-1):
-    print(" "*(n-j) + "*"*((2*j-1)))
+#     print(" "*(n-(i+1)) + "*"*(2*i+1))
+# for j in range(n,0,-1):
+#     print(" "*(n-j) + "*"*((2*j-1)))
+
+
+# Binary search practice
+# nums=[1,2,4,6,8,9,11]
+# n=len(nums)
+# i=0
+# j=n
+# mid=(i+j)//2
+# target=9
+def binary_search(nums,target):
+    start=0
+    n=len(nums)
+    end=n-1
+    mid=(start+end)//2
+    target=9
+    while start<=end:
+        if(nums[mid]==target):
+            return mid
+        elif(nums[mid]<target):
+            start=mid+1
+        else:
+            end=mid-1
+
+nums=[1,2,4,6,8,9,11]
+# n=len(nums)
+# i=0
+# j=n
+# mid=(i+j)//2
+target=9
+print(binary_search(nums,target))
