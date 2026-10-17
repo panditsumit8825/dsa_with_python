@@ -119,10 +119,11 @@ def binary_search(nums,target):
         else:
             end=mid-1
 
-nums=[1,2,4,6,8,9,11]
+nums=[1,2,4,6,8,9,11,15,19]
 # n=len(nums)
 # i=0
 # j=n
 # mid=(i+j)//2
 target=9
 print(binary_search(nums,target))
+ 
