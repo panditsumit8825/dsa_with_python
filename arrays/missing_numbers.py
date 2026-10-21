@@ -99,31 +99,22 @@
 
 
 # Binary search practice
-# nums=[1,2,4,6,8,9,11]
-# n=len(nums)
-# i=0
-# j=n
-# mid=(i+j)//2
-# target=9
-def binary_search(nums,target):
-    start=0
-    n=len(nums)
-    end=n-1
-    mid=(start+end)//2
-    target=9
-    while start<=end:
-        if(nums[mid]==target):
-            return mid
-        elif(nums[mid]<target):
-            start=mid+1
-        else:
-            end=mid-1
+def binarySearch(arr, targetVal):
+  left = 0
+  right = len(arr) - 1
 
-nums=[1,2,4,6,8,9,11,15,19]
-# n=len(nums)
-# i=0
-# j=n
-# mid=(i+j)//2
-target=9
-print(binary_search(nums,target))
- 
+  while left <= right:
+    mid = (left + right) // 2
+
+    if arr[mid] == targetVal:
+      return mid
+
+    if arr[mid] < targetVal:
+      left = mid + 1
+    else:
+      right = mid - 1
+
+  return -1
+
+mylist = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+x = 11
