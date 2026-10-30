@@ -4,6 +4,6 @@ def array_sorted(arr,n):
             return False
     return True
 
-arr=[1,2,2,3,3,4]
+arr=[1,2,2,3,3,4,5]
 n=len(arr)
 print(array_sorted(arr,n))
