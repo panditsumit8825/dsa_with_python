@@ -1,5 +1,5 @@
 # leetcode 350 problem by brute force approach
-nums1=[4,9,5]
+nums1=[4,9,5,6,7]
 nums2=[9,4,9,8,4]
 n1=len(nums1)
 n2=len(nums2)
