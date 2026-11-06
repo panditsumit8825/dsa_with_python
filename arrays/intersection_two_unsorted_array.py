@@ -6,7 +6,7 @@ n2=len(nums2)
 visit=[0]*n2
 ans=[]
 for i in range(n1):
-    for j in range(n2):
+    for j in range(n1):
         if(nums1[i]==nums2[j] and visit[j]==0):
             ans.append(nums2[j])
             visit[j]=1
