@@ -18,3 +18,16 @@
 
 
 # Optimal solution 
+arr=[3,1,-2,-5,2,-4]
+n=len(arr)
+ans=[0]*n
+posIndex=0
+negIndex=1
+for i in range(n):
+    if(arr[i]<0):
+        ans[negIndex]=arr[i]
+        negIndex+=2
+    else:
+        ans[posIndex]=arr[i]
+        posIndex+=2
+print(ans)
